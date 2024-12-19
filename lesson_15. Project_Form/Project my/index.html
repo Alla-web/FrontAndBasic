@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./index.js" defer></script>   
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Project</title>
+  </head>
+  <body>
+    <div id="root">
+      <h3>Create an Employee</h3>
+      <div class="cards-container">
+        <form id="formEmployee">
+          <div class="form-item">
+            <label for="name">Name*</label>
+            <input id="name" name="name" type="text" placeholder="Enter employee Name"/>
+          </div>
+          <div class="form-item">
+            <label for="surname">Surname*</label>
+            <input id="surname" name="surname" type="text" placeholder="Enter employee Surname"/>
+          </div>
+          <div class="form-item">
+            <label for="age">Age*</label>
+            <input id="age" name="age" type="text" placeholder="Enter employee Age"/>
+          </div>
+          <div class="form-item">
+            <label for="jobPosition">Job Position</label>
+            <input id="jobPosition" name="position" type="text" placeholder="Enter employee Position"/>
+          </div>
+          <button type="submit">Create</button>
+        </form>
+        <div id="cardEmployee">
+          <div class="card-item">
+            <p>Name</p>
+            <p id="employeeName" class="employee-info">John</p>
+          </div>
+          <div class="card-item">
+            <p>Surname</p>
+            <p id="employeeSurname" class="employee-info">Johnson</p>
+          </div>
+          <div class="card-item">
+            <p>Age</p>
+            <p id="employeeAge" class="employee-info">23</p>
+          </div>
+          <div class="card-item">
+            <p>Position</p>
+            <p id="employeePosition" class="employee-info">QA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+/* Слайдер */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 85%;
+    margin: 20px auto; /* Центрируем слайдер по горизонтали */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Центрируем содержимое */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Movie Grid */
+.movie-grid {
+    text-align: center;
+    padding: 20px;
+}
+
+.movie-grid .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Карусель актеров */
+.actor-carousel {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 10);
+}
+
+.actor-card {
+    flex: 0 0 25%; /* Показать 4 карточки одновременно */
+    text-align: center;
+    margin: 10px;
+}
+
+.actor-card img {
+    width: 100px;
+    height: 150px;
+}
+

@@ -1,0 +1,134 @@
+/* ------общие стили----------- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+#root {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------header----------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+
+  position: fixed;
+  top: 0;
+  z-index: 4;
+
+  width: 100%;
+  height: 50px;
+  padding: 10px 30px;
+  color: white;
+  background: url(images/header.jpg) center / cover;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+
+  font-size: 18px;
+}
+
+/* ------------main------------- */
+main {
+  flex: 1;
+  padding: 70px 30px 30px 30px;
+  background-color: aliceblue;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* ----------cards-------------- */
+.employee-cards {
+  width: 160px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid rgb(202, 217, 242);
+  background-color: rgb(231, 244, 255);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.employee-photo {
+  width: 130px;
+  height: 170px;
+  margin: 5px 0;
+  align-self: center;
+}
+
+.employee-photo_first {
+  background: url(images/employee2.jpg) center / cover;
+}
+
+.employee-photo_second {
+  background: url(images/employee.jpg) center / cover;
+}
+
+.employee-photo_third {
+  background: url(images/employee4.jpg) center / cover;
+}
+
+.first-employee {
+  position: relative;
+  /* z-index: 1; */
+}
+
+.second-employee {
+    position: relative;
+    left: 120px;
+    top: -40px;
+    /* z-index: 0; */
+}
+
+.third-employee {
+    position: relative;
+    left: 240px;
+    top: -80px;
+    /* z-index: 1; */
+}

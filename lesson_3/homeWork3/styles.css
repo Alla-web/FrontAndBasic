@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+
+[alt] {
+  width: 200px;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 12.5px;
+}
+
+.item-cards { 
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  margin: 30px;
+  border-width: 2px;
+}
+
+/* 2-й вариант - объединение стилей 
+.item-1,
+.item-2,
+.item-3 {
+  box-sizing: border-box;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  margin: 30px;
+  border-width: 2px;
+}
+*/
+
+.item-1 {
+  border-style: solid;
+  border-color: blue;
+}
+
+.item-2 {
+  border-style: dashed;
+  border-color: purple;
+}
+
+.item-3 {
+  border-style: double;
+  border-color: orangered;
+}

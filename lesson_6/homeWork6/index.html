@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />    
+    <title>Homework 6</title>
+  </head>
+  <body>
+    <div id="root">
+      <h2>Contact us</h2>
+      <form class="contact-form" action="" method="get">
+        <div>
+          <label for="name">Name*</label>
+          <input name="user_name" type="text" id="name" class="form-input" placeholder="Your name" required maxlength="20"/>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input name="user_email" type="email" id="email" class="form-input" placeholder="Your working email"/>
+        </div>
+        <div>
+          <label for="location-select">Location</label>
+          <select name="location" type="select" id="location-select" class="form-input">
+            <option value="" >--Please choose an option--</option>
+            <option value="New York">New York</option>
+            <option value="Los Angeles" selected>Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Boston">Boston</option>
+          </select>
+        </div>
+        <div >
+            <label for="message-textarea">Message</label>
+            <textarea id="message-textarea" name="message" type="textarea" placeholder="Your message" required></textarea>
+        </div>
+        <div class="agreement-container">
+            <label for="agreement-input">I agree</label>
+            <input id="agreement-input" name="agreement" type="checkbox">
+        </div>
+        <div class="buttons-container">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

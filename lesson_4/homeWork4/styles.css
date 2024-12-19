@@ -1,0 +1,154 @@
+/* глобальные стили */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------header---------------- */
+[alt="Logo"] {
+  width: 80px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 37px;
+  background-color: rgb(39, 39, 41);
+  color: blanchedalmond;
+}
+
+.name-logo {
+  display: flex;
+  flex-direction: row-reverse;
+  /* font-weight: bold; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 20px;
+}
+
+nav > a {
+  color: inherit;
+}
+
+/* ---------------main---------------- */
+main {
+  flex: 1;
+  padding: 0 30px 20px 30px;
+  background-color: rgb(211, 252, 252);
+}
+
+section > h1 {
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+div > h4 {
+  padding: 6px 0;
+}
+
+.categories-images {
+  width: 280px;
+  /* border: 2px solid black; */
+}
+
+.categories-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#office-categorie,
+#school-categorie,
+#creativity-categorie,
+#accessories-categorie {
+  font-size: 20px;
+}
+
+/* ---------------cards----------------- */
+.items-images {
+  width: 150px;  
+}
+
+.item-cards {
+  width: 200px;
+  height: 230px;
+  padding: 20px;
+  border: 2px solid rgb(181, 181, 181);
+  font-size: 15px;
+  text-align: center;
+  background-color: rgb(169, 249, 249);
+}
+
+.novelty-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* -------------footer------------- */
+footer {
+  padding: 10px 30px;
+  background-color: rgb(21, 21, 21);
+  color: blanchedalmond;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.links {
+  color: antiquewhite;
+}
+
+.creating {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0 0 0;
+  color: rgb(251, 184, 96);
+}

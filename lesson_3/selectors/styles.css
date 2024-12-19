@@ -1,0 +1,45 @@
+/*Универсальный селектор*/
+* {
+    margin: 0;
+}
+
+/* селектор по элементу*/
+p {
+  color: blueviolet;
+}
+
+/* селектор по */
+#main-title {
+  color: blue;
+}
+
+/*селектор по классу*/
+.descriptions {
+  color: aqua;
+}
+
+.main {
+  font-size: 30;
+  /*правило каскадности сработало*/
+  color: darkred;
+}
+
+span.descriptions {
+    font-weight: bold;
+  }
+
+/*селекторы по атрибуту*/
+[href] {
+    font-size: 30px;
+}
+
+/*Конфликт стилей - 
+сработало правило приоритетности селекторов*/
+h2 {
+    color: red;
+}
+
+
+
+
+

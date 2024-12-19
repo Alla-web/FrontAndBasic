@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../commonStyles/globalStyles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../commonStyles/elements.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>Regestration</title>
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <div class="container">
+          <a href="../../index.html" class="logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
+              alt="IMDb Logo"
+            />
+          </a>
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Search IMDb..."
+              aria-label="Search IMDb"
+            />
+            <button type="submit">🔍</button>
+          </div>
+          <nav class="nav">
+            <ul>
+              <li><a href="../program/index.html">Program</a></li>
+              <li><a href="../movies/index.html">Movie</a></li>
+              <li><a href="../actors/index.html">Actors</a></li>
+              <li>
+                <a class="active" href="../regestration/index.html">Sing in</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="page-wrapper">
+        <form class="contact-form">
+          <h3>Regestrstion</h3>
+          <div>
+            <label for="Login"> Login:</label>
+            <input
+              required
+              maxlength="10"
+              type="text"
+              name="name"
+              placeholder="Your login"
+              id="name"
+              class="form-input"
+            />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Сreate a password"
+              id="password"
+              class="form-input"
+            />
+          </div>
+          <div>
+            <label for="Repeat password">Repeat password:</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Repeat password"
+              id="password"
+              class="form-input"
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              id="email"
+              class="form-input"
+            />
+          </div>
+          <div>
+            <label for="location">Location:</label>
+            <select id="location" name="location" class="form-input">
+              <option value="New York">Poland</option>
+              <option selected value="Los Angeles">Germany</option>
+              <option value="Boston">England</option>
+            </select>
+          </div>
+          <div class="agreement-container">
+            <input name="agreement" type="checkbox" id="agreement" checked />
+            <label for="agreement">I agree</label>
+          </div>
+          <div>
+            <button class="main-button">register</button>
+          </div>
+        </form>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h4>Навигация</h4>
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="./pages/film/index.html">Лучшие фильмы</a></li>
+                <li><a href="./pages/program/index.html">TV шоу</a></li>
+                <li><a href="./pages/actors/index.html">Актеры</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Помощь</h4>
+              <ul>
+                <li><a href="#">Поддержка</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Мы в сети</h4>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2024 . All rights reserved (ну почти).</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
