@@ -22,25 +22,35 @@
     padding: 0;
   }
   
-  #root {
+  #root { 
+    display: flex;  
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(226, 226, 250);
+    padding: 70px 40px 40px;
+    color: orange;
+    font-family: "Courier New", Courier, monospace;
+    
+  }
+
+  .app-container{
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 80px;
-    width: 100%;
-    height: 100%;
-    background: rgb(79, 79, 252);
-    padding: 70px 40px 40px;
-    color: orange;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 32px;
-    font-weight: bold;
+    gap: 30px;
+    background-color: rgb(79, 79, 252);
+    width: 700px;
+    font-size: 28px;
+    font-weight: bold; 
+    border-radius: 10px;
   }
-  
+
   .input-container {
     display: flex;
-    gap: 40px;
+    gap: 50px;
   }
 
   input {
@@ -64,7 +74,7 @@
     width: 200px;
     height: 40px;
    
-    background-color: yellow;
+    background-color: orange;
     color: darkblue;
     font-size: 18px;
     font-weight: bold;
@@ -74,8 +84,8 @@
   }
   
   button:hover {
-    background-color:rgb(249, 171, 3);
-    color: blue;
+    background-color: blue;
+    color: orange;
    
   }
   
@@ -87,10 +97,16 @@
 
 
   .weather-forecast {
+    width: 550px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 20px 0;
+    /* background-color: orange; */
+    color: orange;
+    border-radius: 10px;
+    font-size: 25px;
   }
   
   .hidden {
