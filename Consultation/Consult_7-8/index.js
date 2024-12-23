@@ -5,17 +5,26 @@ const USER_CITY = document.querySelector(".user-city");
 const GET_USER_BUTTON = document.querySelector(".get-user");
 const RANDOM_USER_URL = "https://randomuser.me/api/";
 
+const initialUserName = USER_NAME.textContent;
+const initialUserCity = USER_CITY.textContent;
+const initialUserPhone = USER_PHONE.textContent;
+
 const getUser = async () => {
+
+  USER_NAME.textContent = initialUserName;
+  USER_CITY.textContent = initialUserCity;
+  USER_PHONE.textContent = initialUserPhone;
+
   const response = await fetch(RANDOM_USER_URL);
   console.log(response);
   const result = await response.json();
-  console.log(result);
-  console.log(result.results[0].name);
+  console.log(result); 
   
   if (response.ok) {
     const nameObject = result.results[0].name;
     const fullName = `${nameObject.title} ${nameObject.first} ${nameObject.last}`;
     
+    USER_AVATAR.setAttribute("src", result.results[0].picture.medium);
     USER_NAME.textContent = `${USER_NAME.textContent} ${fullName}`;
     USER_CITY.textContent = `${USER_CITY.textContent} ${result.results[0].location.city}`
     USER_PHONE.textContent = `${USER_PHONE.textContent} ${result.results[0].phone}`;
@@ -26,3 +35,4 @@ const getUser = async () => {
   }
 };
 GET_USER_BUTTON.addEventListener("click", getUser);
+

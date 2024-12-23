@@ -1,121 +1,134 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  #root { 
-    display: flex;  
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: rgb(226, 226, 250);
-    padding: 70px 40px 40px;
-    color: orange;
-    font-family: "Courier New", Courier, monospace;
-    
-  }
+  box-sizing: border-box;
+}
 
-  .app-container{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-    background-color: rgb(79, 79, 252);
-    width: 700px;
-    font-size: 28px;
-    font-weight: bold; 
-    border-radius: 10px;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  .input-container {
-    display: flex;
-    gap: 50px;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 
-  input {
-    width: 300px;
-    height: 40px;
-    padding: 10px 6px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-  }
+#root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* height: 100%; */
+  background: rgb(226, 226, 250);
+  padding: 70px 40px 40px;
+  color: orange;
+  font-family: "Courier New", Courier, monospace;
+}
 
-  input::placeholder {
-    font-size: 18px;  
-  }
+.app-container {
+  height: 830px;
+  width: 1300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(79, 79, 252);
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 10px;
+}
 
-  input:focus {
-    outline: none; /* Убираем внешнюю рамку */
-  }
+.input-container {
+  display: flex;
+  gap: 50px;
+}
 
-  button {
-    width: 200px;
-    height: 40px;
-   
-    background-color: orange;
-    color: darkblue;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: blue;
-    color: orange;
-   
-  }
-  
-  button:disabled {
-    background-color: #7d7d80;
-    color: rgb(166, 163, 163);
-    cursor: pointer;
-  }
+input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+}
 
+input::placeholder {
+  font-size: 18px;
+}
 
-  .weather-forecast {
-    width: 550px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px 0;
-    /* background-color: orange; */
-    color: orange;
-    border-radius: 10px;
-    font-size: 25px;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .error {
-    color: red;
-  }
-  
-  
-  
+input:focus {
+  outline: none; /* Убираем внешнюю рамку */
+}
+
+button {
+  width: 200px;
+  height: 40px;
+
+  background-color: orange;
+  color: darkblue;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+  color: orange;
+}
+
+button:disabled {
+  background-color: #7d7d80;
+  color: rgb(166, 163, 163);
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-forecast {
+  width: 550px;
+  height: 550px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.weather-forecast-changed {
+  background-color: orange;
+  color: blue;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+.city-photo {
+  width: 550px;
+  height: 550px;
+  border-radius: 10px;
+}

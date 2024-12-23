@@ -10,16 +10,24 @@
   <body>
     <div id="root">
       <div class="app-container">
-      <h1>Weather app</h1>
-      <div class="input-container">
-        <input id="city-input" name="city" type="text" placeholder="Enter your city" />
-        <button class="get-weather-button" type="button">Get Weather</button>
+        <h1>Weather app</h1>
+        <div class="input-container">
+          <input
+            id="city-input"
+            name="city"
+            type="text"
+            placeholder="Enter your city"
+          />
+          <button class="get-weather-button" type="button">Get Weather</button>
+        </div>
+        <div class="result-container">
+          <div id="loading" class="hidden">Loading...</div>
+          <div class="results">
+            <div class="weather-forecast"></div>
+            <img class="city-photo hidden" src="" alt="cityphoto" />
+          </div>
+        </div>
       </div>
-      <div class="result-container">
-        <div id="loading" class="hidden">Loading...</div>
-        <div class="weather-forecast"></div>
-      </div>
-    </div>
     </div>
   </body>
 </html>
