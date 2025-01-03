@@ -23,7 +23,7 @@ const getJoke = async () => {
   loading.removeAttribute("class");
   //удаляем дополнительный класс (выделение ошибки красным)
   jokeContainer.classList.remove("error");
-  
+
   try {
     //отправка запроса, ожидание завершения промиса, который возвращает fetch
     // и сохранение результата в переменную response
@@ -41,10 +41,10 @@ const getJoke = async () => {
     if (response.ok) {
       //сценарий при статусе Promice resolved (получили данные и обрабатываем их)
       //   jokeContainer.textContent = `Joke: ${result.setup}. \n Answer: ${result.punchline}`;
-      jokeContainer.innerHTML = `
-      <div>${result.setup}</div>
-      <div>${result.punchline}</div>
-      `;
+      jokeContainer.innerHTML = `<div>${result.setup}</div>`;
+      setTimeout(() => {
+        jokeContainer.innerHTML += `<div>${result.punchline}</div>`;
+      }, 3000);
       getJokeButton.removeAttribute("disabled"); //разблокируем кнопку для повторного использования
     } else {
       //генерирум исключение

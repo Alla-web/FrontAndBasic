@@ -109,9 +109,13 @@ const getCityWeatherForecast = async () => {
     //если появится ошибка - она будет подсвечиваться корасным
     weatherForecast.classList.add("error");
     weatherForecast.classList.add("weather-forecast-changed");
+    cityPhoto.removeAttribute("src"); 
+    cityPhoto.classList.add("hidden");
+
   } finally {
     loading.setAttribute("class", "hidden");
-    getWeatherButton.removeAttribute("disabled");    
+    getWeatherButton.removeAttribute("disabled");
+    
   }
 };
 

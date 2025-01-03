@@ -26,7 +26,7 @@ li {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   background: rgb(226, 226, 250);
   padding: 70px 40px 40px;
   color: orange;
@@ -34,14 +34,16 @@ li {
 }
 
 .app-container {
-  height: 830px;
-  width: 1300px;
+  min-height: 330px;
+  max-height: fit-content;
+  min-width: 1000px;
+  max-width: fit-content;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   background-color: rgb(79, 79, 252);
   font-size: 28px;
   font-weight: bold;
@@ -79,6 +81,7 @@ button {
   font-size: 18px;
   font-weight: bold;
   border: none;
+  outline: none;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -96,14 +99,14 @@ button:disabled {
 
 .results {
   display: flex;
-  gap: 40px;
   justify-content: space-around;
   align-items: center;
+  gap: 40px;
 }
 
 .weather-forecast {
-  width: 550px;
-  height: 550px;
+  width: 500px;
+  height: fit-content;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -128,7 +131,7 @@ button:disabled {
 }
 
 .city-photo {
-  width: 550px;
-  height: 550px;
+  /* width: 500px; */
+  height: 320px; 
   border-radius: 10px;
 }
